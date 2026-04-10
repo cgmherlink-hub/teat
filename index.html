@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kid Castle 內部會議與記錄瀏覽入口</title>
+    <style>
+        :root {
+            --primary-color: #0056b3; /* 吉的堡品牌色調參考 */
+            --accent-color: #ffcc00;
+            --bg-color: #f4f7f9;
+        }
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        h1 { color: var(--primary-color); margin: 0; }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+        .card i { font-size: 40px; color: var(--primary-color); margin-bottom: 10px; display: block; }
+        .card span { font-weight: bold; font-size: 1.1em; }
+        
+        .admin-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff9e6;
+            border-left: 5px solid var(--accent-color);
+            border-radius: 5px;
+        }
+        .admin-section h3 { margin-top: 0; color: #856404; }
+        .email-tag {
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+        footer { text-align: center; margin-top: 20px; font-size: 0.8em; color: #777; }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <header>
+        <h1>🏰 Kid Castle </h1>
+        <p>內部會議紀錄與檔案瀏覽入口</p>
+    </header>
+
+    <div class="grid-container">
+        <a href="#" class="card">
+            <i>📅</i>
+            <span>行政會議紀錄</span>
+        </a>
+        <a href="#" class="card">
+            <i>💡</i>
+            <span>教學研討專區</span>
+        </a>
+        <a href="#" class="card">
+            <i>📊</i>
+            <span>分校營運報表</span>
+        </a>
+        <a href="#" class="card">
+            <i>📁</i>
+            <span>活動影音資料庫</span>
+        </a>
+    </div>
+
+    <div class="admin-section">
+        <h3>🔑 權限與密碼管理</h3>
+        <p>所有加密檔案之密碼已統一存放在：</p>
+        <p><strong>雲端 Excel：</strong> <span class="email-tag">CASTLEPARTYWU@GMAIL.COM</span> 帳號下的 <code>密碼管理.xlsx</code></p>
+        <p>👉 <strong>權限說明：</strong> 該檔案已開啟「允許修改」權限，請相關負責人定期更新。</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Kid Castle Education Group. Internal Use Only.
+    </footer>
+</div>
+
+</body>
+</html>
